@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Real Love",
     images: [
       {
-        url: "/real-love-logo.png",
+        url: "/real-love.png",
         width: 1200,
         height: 630,
         alt: "Real Love logo",
@@ -53,12 +53,12 @@ export const metadata: Metadata = {
     title: "Real Love",
     description:
       "Real Love is a movement creating spaces of hope, healing, creativity, and faith.",
-    images: ["/real-love-logo.png"],
+    images: ["/real-love.png"],
   },
   icons: {
-    icon: "/real-love-logo.png",
-    shortcut: "/real-love-logo.png",
-    apple: "/real-love-logo.png",
+    icon: "/real-love.png",
+    shortcut: "/real-love.png",
+    apple: "/real-love.png",
   },
   formatDetection: {
     telephone: false,
@@ -87,7 +87,7 @@ export default function RootLayout({
             "@type": "Organization",
             name: "Real Love",
             url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-            logo: "/real-love-logo.png",
+            logo: "/real-love.png",
             description:
               "Real Love is a movement creating spaces of hope, healing, creativity, and faith through community, outreach, artist development, and spiritual renewal.",
           })}
