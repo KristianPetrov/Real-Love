@@ -5,6 +5,7 @@ const NAV_ITEMS = [
   { name: "About", href: "#about" },
   { name: "Core Mission", href: "#core-mission" },
   { name: "Pillars of Love", href: "#pillars" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function NavBar() {

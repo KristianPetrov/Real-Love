@@ -2,6 +2,7 @@ import CandleImage from "@/components/CandleImage";
 import AboutSection from "@/components/sections/AboutSection";
 import CoreMissionSection from "@/components/sections/CoreMissionSection";
 import PillarsSection from "@/components/sections/PillarsSection";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <AboutSection />
         <CoreMissionSection />
         <PillarsSection />
+        <ContactSection />
       </div>
     </main>
   );
