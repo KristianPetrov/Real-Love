@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-old-english: var(--font-old-english);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +24,43 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Smooth scrolling for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Candlelight flicker animation */
+@keyframes candleFlicker {
+  0% { opacity: 0.55; filter: blur(28px) saturate(120%); }
+  5% { opacity: 0.65; filter: blur(26px) saturate(125%); }
+  10% { opacity: 0.6; filter: blur(27px) saturate(115%); }
+  15% { opacity: 0.75; filter: blur(24px) saturate(130%); }
+  20% { opacity: 0.62; filter: blur(26px) saturate(120%); }
+  30% { opacity: 0.72; filter: blur(25px) saturate(125%); }
+  40% { opacity: 0.6; filter: blur(27px) saturate(115%); }
+  50% { opacity: 0.78; filter: blur(22px) saturate(135%); }
+  60% { opacity: 0.58; filter: blur(28px) saturate(120%); }
+  70% { opacity: 0.7; filter: blur(25px) saturate(125%); }
+  80% { opacity: 0.64; filter: blur(26px) saturate(120%); }
+  90% { opacity: 0.76; filter: blur(23px) saturate(132%); }
+  100% { opacity: 0.6; filter: blur(27px) saturate(118%); }
+}
+
+.candle-flicker {
+  animation: candleFlicker 3.2s infinite ease-in-out alternate;
+}
+
+/* Old English styled headings: white text with red outline */
+.old-english-heading {
+  font-family: var(--font-old-english), serif;
+  color: #fff;
+  /* red outline using multi-direction text-shadow for broader support */
+  text-shadow:
+    -1px -1px 0 #ef4444,
+     1px -1px 0 #ef4444,
+    -1px  1px 0 #ef4444,
+     1px  1px 0 #ef4444,
+     0    0   6px rgba(239,68,68,0.55);
 }
